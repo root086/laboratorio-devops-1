@@ -1,0 +1,61 @@
+.terminal-wrapper {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.terminal-header {
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: "Consolas", "Monaco", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logs-container {
+  height: 400px;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  overflow-y: auto;
+  color: var(--success);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar Bonita */
+.logs-container::-webkit-scrollbar {
+  width: 10px;
+}
+.logs-container::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+.logs-container::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 5px;
+  border: 2px solid #0d1117;
+}
+
+.log-entry {
+  margin-bottom: 6px;
+  word-break: break-all;
+}
+.log-timestamp {
+  color: #6e7681;
+  margin-right: 12px;
+  font-size: 0.85em;
+  user-select: none;
+}
+.log-warn {
+  color: var(--warning);
+}
+.log-error {
+  color: var(--danger);
+  font-weight: bold;
+}

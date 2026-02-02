@@ -1,0 +1,71 @@
+:root {
+  --bg-color: #000000;
+  --card-bg: #000000;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #ff5e00;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid var(--card-bg);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.highlight {
+  color: var(--accent);
+}
+.version-badge {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .version-badge {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+  }
+}
